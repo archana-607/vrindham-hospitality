@@ -5,14 +5,14 @@ import Link from 'next/link'; // For client-side navigation
 export default function Header() {
   return (
     <header className="bg-black p-4 shadow-md"> {/* Tailwind classes for background, padding, shadow */}
-      <nav className="container mx-auto flex justify-between items-center">
+      <nav className="container mx-auto flex flex-col md:flex-row md:justify-between md:items-center">
         {/* Restaurant Name/Logo */}
-        <Link href="/" className="text-yellow-300 text-3xl font-bold hover:text-orange-100 transition-colors duration-200">
+        <Link href="/" className="text-yellow-400 text-3xl font-bold hover:text-yellow-200 transition-colors duration-200 mb-4 md:mb-0 text-center">
             Vrindham
         </Link>
 
         {/* Navigation Links */}
-        <ul className="flex space-x-6"> {/* Tailwind for horizontal links with spacing */}
+        <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 items-center w-full md:w-auto"> {/* Tailwind for horizontal links with spacing */}
           <li>
   <a
     href="https://www.zomato.com/agra/vrindham-dosa-corner-civil-lines/menu" // <-- IMPORTANT: Replace this with your actual Zomato URL
