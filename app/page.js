@@ -20,7 +20,7 @@ export default function Home() {
           {/* Restaurant Logo */}
           <div className="mb-8">
             <Image
-              src="/images/Logo.png" // Adjust path to your logo image
+              src="/images/Logo.PNG" // Adjust path to your logo image
               alt="Vrindham Restaurant Logo"
               width={400} // Adjust size as needed
               height={600} // Adjust size as needed
